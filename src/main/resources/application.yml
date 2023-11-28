@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: protobuf-server
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: metrics,mappings
+  endpoint:
+    metrics:
+      enabled: true
+
+grpc:
+  server:
+    port: 9091
